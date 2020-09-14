@@ -1,0 +1,77 @@
+/*
+Name: Chip Kelsey
+Date Created: 9/11/2020
+Most recent revision: 9/11/2020
+*/
+
+/*
+Colors:
+  #8EBA01
+  #4C6C00
+  #CAFF1C
+  #4A006E
+  #7E02BA
+  #f9f9f9
+*/
+
+body {
+  background-color: #f9f9f9;
+  font-family: arial, helvetica, sans-serif;
+  color: #222;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header, footer {
+  background-color: #8EBA01;
+  color: #fff;
+  height: 100px;
+  text-align: center;
+  padding: 30px 10px 20px 10px;
+}
+footer {
+  margin-top: 20px;
+}
+h1 {
+  font-size: 2.5em;
+}
+nav {
+  border-top: 3px dashed #4A006E;
+  border-bottom: 3px dashed #4A006E;
+  margin-top: 4px;
+}
+a {
+  color: #4C6C00;
+  text-decoration: none;
+}
+a:visited {
+  color: #4A006E;
+}
+a:hover, a:active {
+  color: #7E02BA;
+  text-decoration: underline;
+}
+.clear-float {
+  clear:both;
+}
+nav a {
+  background-color: #4A006E;
+  color: #fff;
+  padding: 8px;
+  border: thin solid #bbb;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 20px;
+  width: 100px;
+  float: left;
+}
+nav a:visited {
+  color: #eee;
+}
+nav a:hover {
+  background-color: #8EBA01;
+  color: #000;
+}
+nav a:active {
+  font-weight: bold;
+}

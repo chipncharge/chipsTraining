@@ -2,11 +2,60 @@
 <!--
 Name: Chip Kelsey
 Date Created: 9/10/2020
-Most recent revision: 9/10/2020
+Most recent revision: 9/11/2020
+-->
+
+<!-- 
+Colors:
+#8EBA01
+#6C8C00
+#CAFF1C
+#4A006E
+#7E02BA
+
 -->
 <html lang="en">
   <head>
     <title>Chip Kelsey's Portfolio</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <style>
+      caption {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 8px;
+      }
+      table, th, td {
+        border: 1px solid #bbb;
+        border-collapse: collapse;
+        padding: 5px 10px;
+        color: #222;
+      }
+      table {
+        width: 90%;
+        margin: auto;
+      }
+      tr {
+        height: 30px;
+      }
+      th {
+        background-color: #CAFF1C;
+        color: #000;
+      }
+      tr:nth-child(even) td {
+        background-color: #f2f2f2;
+      }
+      /* Creating article layouts */
+      article {
+        margin-bottom: 16px;
+      }
+      article img {
+        float:left;
+        max-width: 250px;
+      }
+      .right-content {
+        float:left;
+      }
+    </style>
   </head>
   <body>
     <main>
@@ -15,75 +64,98 @@ Most recent revision: 9/10/2020
       </header>      
       <!-- We need to add links to projects.html, contact.html, and testimonials.html -->
       <nav>
-        <hr />
-        <ul>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
-        </ul>
-        <hr />
-      </nav>      
+        <p><a href="index.html">Home</a></p>
+        <p><a href="projects.html">Projects</a></p>
+        <p><a href="contact.html">Contact</a></p>
+        <p><a href="testimonials.html">Testimonials</a></p>
+        <div class="clear-float"></div>
+      </nav>
       <section>
         <article id="about-me">
           <h2><em>About Me</em></h2>
           <img src="images/505d99aa-cebd-e911-80ee-1402ec94d03c.jpeg" alt="Portrait of Chip Kelsey" />
           <p>I am a web developer with a <strong>dog named Artie.</strong></p>
           <p>I like to play <strong>tennis</strong> in my spare time. <a href="#hobbies">Check out my hobbies.</a></p>
+          <div class="clear-float"></div>
         </article>
         <article id="past-experience">
           <h2><em>Past Experiences</em></h2>
           <img src="images/IMG_1597_opti.jpg" alt="Portrait of Artie, my dog" />
-          <table>
-            <caption>Employment History</caption>
-            <tr>
-              <th>Years of Employment</th>
-              <th>Title</th>
-              <th>Company</th>
-            </tr>
-            <tr>
-              <td>2000 - Present</td>
-              <td>Web Developer</td>
-              <td>SmartEtailing</td>
-            </tr>
-            <tr>
-              <td>1990 - 2000</td>
-              <td>Purchasing Manager</td>
-              <td>Plano Cycling</td>
-            </tr>
-          </table>
+          <div class="right-content">
+            <table>
+              <caption>Employment History</caption>
+              <thead>
+                <tr>
+                  <th>Years of Employment</th>
+                  <th>Title</th>
+                  <th>Company</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2015 - Present</td>
+                  <td>Web Developer</td>
+                  <td>SmartEtailing</td>
+                </tr>
+                <tr>
+                  <td>2006 - 2015</td>
+                  <td>Technical Specialist</td>
+                  <td>SmartEtailing</td>
+                </tr>
+                <tr>
+                  <td>2004 - 2006</td>
+                  <td>Content Team Manager</td>
+                  <td>SmartEtailing</td>
+                </tr>
+                <tr>
+                  <td>2000 - 2004</td>
+                  <td>Content Specialist</td>
+                  <td>SmartEtailing</td>
+                </tr>
+                <tr>
+                  <td>1990 - 2000</td>
+                  <td>Purchasing Manager</td>
+                  <td>Plano Cycling</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="clear-float"></div>
         </article>
         <article id="hobbies">
           <h2><em>Hobbies</em></h2>
           <img src="images/IMG959968.jpg" alt="Me with tennis equipment" />
-          <ul>
-            <li>Sports</li>
-            <ol>
-              <li>Tennis</li>
-              <li>Basketball</li>
-              <li>Skiing</li>
-            </ol>
-            <li>Movies</li>
-            <ol>
-              <li>LA Confidential</li>
-              <li>Inside Man</li>
-              <li>Usual Suspects</li>
-            </ol>
-            <li>Pastimes</li>
+          <div class="right-content">
             <ul>
-              <li>Dancing</li>
-              <li>Pool</li>
-              <li>Playing cards</li>
+              <li>Sports</li>
+              <ol>
+                <li>Tennis</li>
+                <li>Basketball</li>
+                <li>Skiing</li>
+              </ol>
+              <li>Movies</li>
+              <ol>
+                <li>LA Confidential</li>
+                <li>Inside Man</li>
+                <li>Usual Suspects</li>
+              </ol>
+              <li>Pastimes</li>
+              <ul>
+                <li>Dancing</li>
+                <li>Pool</li>
+                <li>Playing cards</li>
+              </ul>
+              <li>Outdoor Activities</li>
+              <ul>
+                <li>Hiking</li>
+                <li>Camping</li>
+              </ul>
             </ul>
-            <li>Outdoor Activities</li>
-            <ul>
-              <li>Hiking</li>
-              <li>Camping</li>
-            </ul>
-          </ul>
+          </div>
+          <div class="clear-float"></div>
         </article>
       </section>
       <footer>
-        <hr />
         <p>&copy; 2020 Chip Kelsey. All rights reserved.</p>
       </footer>
     </main>

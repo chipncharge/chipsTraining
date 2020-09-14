@@ -2,18 +2,37 @@
 <!--
 Name: Chip Kelsey
 Date Created: 9/10/2020
-Most recent revision: 9/10/2020
+Most recent revision: 9/14/2020
 -->
+
+<!-- 
+Colors:
+#8EBA01
+#6C8C00
+#CAFF1C
+#4A006E
+#7E02BA 
+-->
+
 <html lang="en">
   <head>
     <title>Chip's Fish & Chips</title>
+    <link rel="stylesheet" href="styles/restaurantStyles.css">
+    <style type="text/css">
+      article p:first-child {
+        font-weight: bold;
+        color: #8EBA01;
+        border-bottom: 1px solid #4A006E;
+        margin-bottom: 5px;
+        padding-bottom: 3px;
+      }
+    </style>
   </head>
   <body>
     <main>
       <header>
         <h1>Chip's Fish & Chips</h1>        
       </header>
-      <hr />
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -21,10 +40,9 @@ Most recent revision: 9/10/2020
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
-      <hr />
       <section>
-        <figure>
-          <img src="images/restaurant-2697945_1920.jpg" alt="A table inside our restaurant">
+        <figure style="margin: 0 0 20px">
+          <img src="images/restaurant-2697945_1920.jpg" alt="A table inside our restaurant" style="display: block; margin: 0 auto; max-width: 100%;">
         </figure>
         <article>
           <p>About Us</p>
@@ -32,7 +50,6 @@ Most recent revision: 9/10/2020
         </article>
       </section>
       <footer>
-        <hr />
         <address>1234 Heavenly Way, Longmont, CO, 80501<br />555-555-5555</address>
       </footer>
     </main>

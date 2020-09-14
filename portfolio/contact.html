@@ -7,15 +7,21 @@ Most recent revision: 9/10/2020
 <html lang="en">
   <head>
     <title>Contact Me</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="styles/forms.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <main>
       <header>
         <h1>Contact Me</h1>
-        <hr />
-        <a href="index.html">Home</a>
       </header>
-      <hr />
+      <nav>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="projects.html">Projects</a></p>
+        <p><a href="contact.html">Contact</a></p>
+        <p><a href="testimonials.html">Testimonials</a></p>
+        <div class="clear-float"></div>
+      </nav>
       <section>
         <h2>Information Request</h2>
         <form action="submit.html" method="POST">
@@ -33,7 +39,7 @@ Most recent revision: 9/10/2020
             <option value="evening">Evening (5PM to 8PM Eastern)</option>
           </select>
           <fieldset>
-            <legend>I am interested in (check all that apply)</legend><br />
+            <legend>I am interested in (check all that apply)</legend>
             <input type="checkbox" id="frontEnd" name="interest" value="frontEnd">
             <label for="frontEnd">Front End Web Development</label><br />
             <input type="checkbox" id="backEnd" name="interest" value="backEnd">
@@ -42,7 +48,7 @@ Most recent revision: 9/10/2020
             <label for="database">Database Design</label><br />
           </fieldset>
           <fieldset>
-            <legend>I have filled in the client questionnaire form:</legend><br />
+            <legend>I have filled in the client questionnaire form:</legend>
             <input type="radio" id="choice1" name="questionnaire" value="yes">
             <label for="choice1">Yes</label><br />
             <input type="radio" id="choice2" name="questionnaire" value="no">
@@ -54,7 +60,6 @@ Most recent revision: 9/10/2020
         </form>
       </section>
       <footer>
-        <hr />
         <p>&copy; 2020 Chip Kelsey. All rights reserved.</p>
       </footer>
     </main>

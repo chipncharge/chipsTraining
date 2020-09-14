@@ -4,16 +4,84 @@ Name: Chip Kelsey
 Date Created: 9/10/2020
 Most recent revision: 9/10/2020
 -->
+
+<!-- 
+Colors:
+#8EBA01
+#6C8C00
+#CAFF1C
+#4A006E
+#7E02BA 
+-->
+
 <html lang="en">
   <head>
     <title>Chip's Fish & Chips</title>
+    <link rel="stylesheet" href="styles/restaurantStyles.css">
+    <style type="text/css">
+      form {
+        text-align: center;
+      }
+      .required {
+        font-weight: bold;
+      }
+      input, select, textarea, fieldset {
+        margin-bottom: 10px;
+      }
+      input[type=text], textarea {
+        width: 200px;
+        padding: 5px;
+      }
+      select {
+        width: 210px;
+        padding: 5px;
+      }
+      legend {
+        float: left;
+        margin-right: 20px;
+      }
+      input[type="radio"], 
+      input[type="radio"] + label, 
+      input[type="checkbox"], 
+      input[type="checkbox"] + label {
+        float: left;
+      }
+      input[type="radio"],
+      input[type="checkbox"] {
+        margin-right: 5px;
+      }
+      input[type="radio"] + label,
+      input[type="checkbox"] + label {
+        margin-right: 10px;
+      }
+      textarea {
+        vertical-align: top;
+      }
+      fieldset {
+        margin: 0 auto;
+        max-width: 500px;
+        border: none;
+      }
+      input[type="submit"] {
+        background: #4A006E;
+        color: #fff;
+        padding: 5px 10px;
+        cursor: pointer;
+        border: 1px solid #8EBA01;
+      }
+      input[type="submit"]:hover,
+      input[type="submit"]:active {
+        background: #8EBA01;
+        border: 1px solid #4A006E;
+        color: #000;
+      }
+    </style>
   </head>
   <body>
     <main>
       <header>
-        <h1>Chip's Fish & Chips</h1>        
+        <h1>Chip's Fish & Chips</h1>
       </header>
-      <hr />
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -21,23 +89,22 @@ Most recent revision: 9/10/2020
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
-      <hr />
       <section>
         <form action="submit.html" method="POST">
-          <label for="name">Name:</label> <br />
-          <input type="text" id="name" name="name"> <br />
-          <label for="email">Email:</label><br />
-          <input type="text" id="email" name="email"> <br />
-          <label for="phone">Phone:</label><br />
-          <input type="text" id="phone" name="phone"> <br />
-          <label for="reason">Reason for Inquiry:</label><br />
-          <select id="reason" name="reason">
+          <label for="name" class="required">Name:</label>
+          <input type="text" id="name" name="name" required> <br />
+          <label for="email" class="required">Email:</label>
+          <input type="text" id="email" name="email" required> <br />
+          <label for="phone" class="required">Phone:</label>
+          <input type="text" id="phone" name="phone" required> <br />
+          <label for="reason" class="required">Reason for Inquiry:</label>
+          <select id="reason" name="reason" required>
             <option value="catering" selected>Catering</option>
             <option value="privateParty">Private Party</option>
             <option value="feedback">Feedback</option>
             <option value="other">Other</option>
-          </select>
-          <label for="additional">Additional Information</label><br />
+          </select><br />
+          <label for="additional">Additional Information:</label>
           <textarea id="additional" name="additional"></textarea><br />
           <fieldset>
             <legend>Have you been to the restaurant?</legend>
@@ -59,11 +126,10 @@ Most recent revision: 9/10/2020
             <input type="checkbox" id="friday" name="days" value="friday">
             <label for="friday">F</label>
           </fieldset>
-          <input type="submit" name="submit" value="Submit">
+          <input type="submit" name="submit" value="Send Request">
         </form>
       </section>
       <footer>
-        <hr />
         <address>1234 Heavenly Way, Longmont, CO, 80501<br />555-555-5555</address>
       </footer>
     </main>

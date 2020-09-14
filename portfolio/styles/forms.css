@@ -1,0 +1,60 @@
+/*
+Name: Chip Kelsey
+Date Created: 9/11/2020
+Most recent revision: 9/11/2020
+*/
+
+/*
+Colors:
+  #8EBA01
+  #4C6C00
+  #CAFF1C
+  #4A006E
+  #7E02BA
+  #f9f9f9
+  #bbb
+*/
+
+label, fieldset {
+  font-size: 1.1em;
+}
+input[type=text] {
+  border: 2px solid #bbb;
+  width: 50%;
+  padding: 8px;
+  margin: 12px 0;
+  box-sizing: border-box;
+}
+fieldset {
+  background-color: #f9f9f9;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 12px 0;
+  box-sizing: border-box;
+}
+select, textarea {
+  margin: 12px 0;
+  font-size: 1em;
+}
+input[type=submit] {
+  font-size: 1.2em;
+  background-color: #4A006E;
+  color: #fff;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #8EBA01;
+  color: #000;
+}
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 12px 20px;
+  margin: 12px 0;
+  box-sizing: border-box;
+  border: 2px solid #bbb;
+  border-radius: 3px;
+  background-color: #fff;
+  resize: none;
+}

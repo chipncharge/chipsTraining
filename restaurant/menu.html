@@ -4,16 +4,63 @@ Name: Chip Kelsey
 Date Created: 9/10/2020
 Most recent revision: 9/10/2020
 -->
+
+<!-- 
+Colors:
+#8EBA01
+#6C8C00
+#CAFF1C
+#4A006E
+#7E02BA 
+-->
+
 <html lang="en">
   <head>
     <title>Chip's Fish & Chips</title>
+    <link rel="stylesheet" href="styles/restaurantStyles.css">
+    <style type="text/css">
+      article {
+        float: left;
+        width: 33.33333%;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      h3 {
+        margin-bottom: 0;
+        color: #8EBA01;
+        border-bottom: 1px solid #4A006E;
+        margin-bottom: 5px;
+        padding-bottom: 3px;
+      }
+      table {
+        width: 80%;
+        border-collapse: collapse;
+        border: 1px solid #4A006E;
+        margin: 0 auto;
+      }
+      th, td {
+        border: 1px solid #4A006E;
+        padding: 6px 12px;
+      }
+      th {
+        background: #888;
+        color: #fff;
+        text-align: left;
+      }
+      tr:nth-child(even) {
+        background: #e9e9e9;
+      }
+      td:nth-child(even) {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <main>
       <header>
         <h1>Chip's Fish & Chips</h1>        
       </header>
-      <hr />
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -21,41 +68,66 @@ Most recent revision: 9/10/2020
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
-      <hr />
       <section>
         <article>
-          <p><strong>Chip's Fish & Chips</strong></p>
+          <h3>Chip's Fish & Chips</h3>
           <p>Our version of the classic! Deep-fried in our world-famous beer batter. Served with our luscious chips, cole slaw and malt vinegar.</p>
           <p>$14.95</p>
         </article>
         <article>
-          <p><strong>Beer Battered Jumbo Shrimp</strong></p>
+          <h3>Beer Battered Jumbo Shrimp</h3>
           <p>Deep-fried in our world-famous beer batter. Served with our renowned chips, cole slaw and cocktail sauce for dipping.</p>
           <p>$15.95</p>
         </article>
         <article>
-          <p><strong>Pan-Seared Scottish Salmon</strong></p>
+          <h3>Pan-Seared Scottish Salmon</h3>
           <p>Flown in fresh! Featuring our famous maple-chipotle glaze. Served with your choice of our spectacular chips or rice pilaf, and sauteed vegetables.</p>
           <p>$19.95</p>
         </article>
         <article>
-          <p><strong>Cabo Fish Tacos</strong></p>
+          <h3>Cabo Fish Tacos</h3>
           <p>Everyone's new favorite dish! Deep-fried cod in our world-famous beer batter. Shredded cheddar-jack, cilantro-lime sour cream, pico de gallo, spanish rice, black bean-corn salsa, lime wedges.</p>
           <p>$11.95</p>
         </article>
         <article>
-          <p><strong>Brisket Tacos</strong></p>
+          <h3>Brisket Tacos</h3>
           <p>Barbacoa beef brisket, flour & corn tortillas, fresh shredded cabbage, sliced avocado, queso fresco, fresh cilantro, spiced sweet potato fries with honey.</p>
           <p>$15.95</p>
         </article>
         <article>
-          <p><strong>Key Lime Pie</strong></p>
+          <h3>Key Lime Pie</h3>
           <p>Tart and sweet, this Key Lime Pie is sure to hit the spot! A delicious chocolate graham cracker crust filled to the brim with an incredibly creamy filling. You won’t be able to stop at just one slice!</p>
           <p>$4.95</p>
         </article>
+        <div class="clear-float"></div>
+      </section>
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">Beverages (non-alcoholic)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Root Beer</td><td>$3.00</td>
+            </tr>
+            <tr>
+              <td>Soda (Coke, Diet Coke, Dr. Pepper, Diet Dr. Pepper, Sprite, Fanta)</td><td>$2.50</td>
+            </tr>
+            <tr>
+              <td>Bottled Water</td><td>$3.00</td>
+            </tr>
+            <tr>
+              <td>Lemonade</td><td>$2.50</td>
+            </tr>
+            <tr>
+              <td>Iced Tea</td><td>$2.00</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
       <footer>
-        <hr />
         <address>1234 Heavenly Way, Longmont, CO, 80501<br />555-555-5555</address>
       </footer>
     </main>
