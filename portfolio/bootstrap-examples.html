@@ -19,6 +19,21 @@
       nav .btn:hover {
         font-weight: bold;
       }
+      .accordion .card-header {
+        background-color: #5b7d87;
+      }
+      .accordion .card-header .btn {
+        color: #fef9ff;
+      }
+      .accordion .card-header .btn:hover {
+        font-weight:bold;
+      }
+      .accordion .card-body a {
+        color: #5b7d87;
+      }
+      .accordion .card-body a:hover {
+        color: #2b4d57;
+      }
     </style>
   </head>
   <body>
@@ -41,6 +56,59 @@
         <div class="col-lg-9 col-md">
           <p>Pellentesque finibus vehicula scelerisque. Morbi eget quam aliquet, vehicula felis vitae, semper odio. Curabitur turpis lectus, ultricies vel nisi vulputate, porta congue sapien. Proin facilisis ipsum at lorem scelerisque tincidunt.</p>
           <p>Proin convallis orci at venenatis euismod. In rhoncus ligula non nibh pellentesque rutrum. Nunc vel mauris diam.</p>
+        </div>
+      </div>
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="portfolio01">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                My First Portfolio Piece
+              </button>
+            </h5>
+          </div>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              <p>
+                <a href="https://bikemart.com" target="_blank">Richardson Bike Mart</a>
+              </p>
+              <figure><img class="img-fluid" src="images/bikemart-screenshot.png" /></figure>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="portfolio02">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                My Second Portfolio Piece
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              <p>
+                <a href="https://www.villagecycle.com/" target="_blank">Village Cycle</a>
+              </p>
+              <figure><img class="img-fluid" src="images/village-screenshot.png" /></figure>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="portfolio03">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                My Third Portfolio Piece
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              <p>
+                <a href="https://www.revolutionscyclery.com/" target="_blank">Janet Template</a>
+              </p>
+              <figure><img class="img-fluid" src="images/revolutions-screenshot.png" /></figure>
+            </div>
+          </div>
         </div>
       </div>
     </div>

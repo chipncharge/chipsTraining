@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+Name: Chip Kelsey
+Date Created: 9/10/2020
+Most recent revision: 9/10/2020
+-->
+<html lang="en">
+  <head>
+    <title>Chip's Fish & Chips</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Chip's Fish & Chips</h1>        
+      </header>
+      <hr />
+      <nav>
+        <p>
+          <span><a href="index.html">Home</a></span>
+          <span><a href="menu.html">Menu</a></span>
+          <span><a href="contact.html">Contact Us</a></span>
+        </p>
+      </nav>
+      <hr />
+      <section>
+        <form action="submit.html" method="POST">
+          <label for="name">Name:</label> <br />
+          <input type="text" id="name" name="name"> <br />
+          <label for="email">Email:</label><br />
+          <input type="text" id="email" name="email"> <br />
+          <label for="phone">Phone:</label><br />
+          <input type="text" id="phone" name="phone"> <br />
+          <label for="reason">Reason for Inquiry:</label><br />
+          <select id="reason" name="reason">
+            <option value="catering" selected>Catering</option>
+            <option value="privateParty">Private Party</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+          </select>
+          <label for="additional">Additional Information</label><br />
+          <textarea id="additional" name="additional"></textarea><br />
+          <fieldset>
+            <legend>Have you been to the restaurant?</legend>
+            <input type="radio" id="choice1" name="visited" value="yes" checked>
+            <label for="choice1">No</label>
+            <input type="radio" id="choice2" name="visited" value="no">
+            <label for="choice2">Yes</label>
+          </fieldset>
+          <fieldset>
+            <legend>Best days to contact you:</legend>
+            <input type="checkbox" id="monday" name="days" value="monday">
+            <label for="monday">M</label>
+            <input type="checkbox" id="tuesday" name="days" value="tuesday">
+            <label for="tuesday">T</label>
+            <input type="checkbox" id="wednesday" name="days" value="wednesday">
+            <label for="wednesday">W</label>
+            <input type="checkbox" id="thursday" name="days" value="thursday">
+            <label for="thursday">Th</label>
+            <input type="checkbox" id="friday" name="days" value="friday">
+            <label for="friday">F</label>
+          </fieldset>
+          <input type="submit" name="submit" value="Submit">
+        </form>
+      </section>
+      <footer>
+        <hr />
+        <address>1234 Heavenly Way, Longmont, CO, 80501<br />555-555-5555</address>
+      </footer>
+    </main>
+  </body>
+</html>

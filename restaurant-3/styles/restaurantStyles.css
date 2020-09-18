@@ -1,0 +1,110 @@
+/*
+Name: Chip Kelsey
+Date Created: 9/10/2020
+Most recent revision: 9/18/2020
+*/
+
+/*
+Colors:
+#8EBA01
+#6C8C00
+#CAFF1C
+#4A006E
+#7E02BA
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+body {
+  color: #222222;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+header {
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  background: #8EBA01;
+  color: #fff;
+  padding: 10px 0;
+}
+header h1 {
+  margin: 0;
+}
+nav {
+  padding: 10px 0;
+  background: #4A006E;
+  border: 1px solid white;
+  border-width: 1px 0;
+}
+section {
+  padding: 20px;
+  background: #f9f9f9;
+}
+a {
+  color: #4A006E;
+}
+a:visited {
+  color: #7E02BA;
+}
+a:active {
+  text-decoration: none;
+}
+a:hover {
+  color: #6C8C00;
+  font-weight: bold;
+}
+nav a {
+  color: #fff;
+}
+nav a:visited {
+  color: #eee;
+}
+nav a:hover {
+  color: #CAFF1C;
+  font-weight: bold;
+}
+.nav-item .nav-link {
+  background: #7E02BA;
+  margin-right: 10px;
+}
+footer {
+  background-color: #8EBA01;
+  color: #fff;
+  padding: 20px;
+  border-top: 1px solid #4A006E;
+  text-align: center;
+}
+.clear-float {
+  clear: both;
+}
+p {
+  margin: 0;
+}
+.cfc-jumbotron {
+  color: #111;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.btn-primary {
+  background: #8EBA01;
+  border-color: #4A006E;
+  text-shadow: none;
+  border-width: 2px;
+}
+.btn-primary:hover {
+  background: #4A006E;
+  border-color: #8EBA01;
+  font-weight: 400;
+}
+.btn-primary:visited {
+  color: #eee;
+}
+.container {
+  max-width: 100%;
+}
+@media (min-width: 1200px) {
+  .container {
+      max-width:1140px;
+  }
+}
+.cfc-modal-title {
+  color: #8EBA01;
+}

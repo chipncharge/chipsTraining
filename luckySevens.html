@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!---
+#227EF5 - blue
+#F5D416 - yellow
+#A89107 - gold
+#F57C2F - salmon
+#A85B28 - dark tan
+-->
+<html>
+  <head>
+    <script type="text/JavaScript" src="luckySevens.js"></script>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+      body {
+        font-family: 'Play', sans-serif;
+        font-size: 20px;
+        color: #222;
+      }
+      h1 {
+        font-size: 2.5em;
+        background: #025E73;
+        color: #fff;
+        text-align: center;
+        padding: 5px 20px 10px;
+        margin-bottom: 20px;
+      }
+      input[type=text] {
+        width: 85px;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='20px' width='85px'><text x='0' y='16' fill='black' font-size='20' font-family='Play'>$</text></svg>") !important;
+        padding: 6px 12px 6px 24px;
+        background-repeat: no-repeat;
+        background-position: 6px 6px;
+        color:#222;
+        border: 1px solid #b9b9b9;
+        border-radius: 4px;
+        font-size: 24px;
+        font-family: 'Play', sans-serif;
+      }
+      p {
+        color: #b30000;
+      }
+      article {
+        width: 600px;
+        margin: 0 auto;
+      }
+      form div {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 24px;
+      }
+      input[type=submit] {
+        background: #F2B705;
+        padding: 5px 20px;
+        font-size: 24px;
+        font-family: 'Play', sans-serif;
+        color: #000;
+        border-radius: 4px;
+        border-color: #025E73;
+      }
+      input[type=submit]:hover {
+        cursor: pointer;
+        background: #025E73;
+        border-color: #F2B705;
+        color: #ffffff;
+      }
+      input[type=submit]:focus {
+        outline: #025E73 auto 1px
+      }
+      table {
+        border-collapse: collapse;
+        border: 1px solid #999;
+        width: 100%;
+        display: none;
+      }
+      thead tr {
+        background: #b9b9b9;
+      }
+      tbody tr:nth-child(odd) {
+        background: #eee;
+      }
+      th, td {
+        border: 1px solid #999;
+        padding: 5px 10px;
+      }
+
+      /* Color Theme Swatches in Hex */
+      .Por-do-sol-1-hex { color: #025E73; }
+      .Por-do-sol-2-hex { color: #037F8C; }
+      .Por-do-sol-3-hex { color: #F2B705; }
+      .Por-do-sol-4-hex { color: #F28705; }
+      .Por-do-sol-5-hex { color: #F2762E; }
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <article>
+          <h1>Lucky Sevens</h1>
+          <form onsubmit="return playLuckySevens();">
+            <div>
+              <label for="startingBet">Starting Bet:</label>
+              <input type="text" id="startingBet">
+            </div>
+            <div id="startingBetError" style="display: none;">
+              <p>Your starting bid must be at least $1.00</p>
+            </div>
+            <div>
+              <input type="submit" id="submitButton" value="Play">
+            </div>
+          </form>
+        </article>
+        <article>
+          <table id="resultsTable">
+            <thead>
+              <tr>
+                <td>Starting Bet</td>
+                <td><span id="startingBetResults" class="money"></span></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Total Rolls Before Going Broke</td>
+                <td><span id="totalRollsResults"></span></td>
+              </tr>
+              <tr>
+                <td>Highest Amount Won</td>
+                <td><span id="highestAmountWon" class="money"></span></td>
+              </tr>
+              <tr>
+                <td>Roll Count at Highest Amount Won</td>
+                <td><span id="rollCountHighest"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

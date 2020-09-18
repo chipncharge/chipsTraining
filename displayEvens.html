@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style type="text/css">
+      .has-error input {
+        border-color: #dc3545;
+      }
+      .has-error label {
+        color: #dc3545;
+      }
+    </style>
+    <script type="text/JavaScript" src="displayEvens.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Sample</h1>
+      </header>
+      <section>
+        <div class="row">
+          <div class="col">
+            <form onsubmit="return displayEvens();">
+              <div class="form-group row">
+                <label for="startNumber" class="col-sm-2 col-form-label text-right">Starting Number</label>
+                <div class="col-sm-6">
+                  <input type="number" id="startNumber" class="form-control">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="endNumber" class="col-sm-2 col-form-label text-right">Ending Number</label>
+                <div class="col-sm-6">
+                  <input type="number" id="endNumber" class="form-control">
+                </div>
+              </div>
+              <div class="row" style="display: none;">
+                <div class="col-sm-2">&nbsp;</div>
+                <div class="col-sm-6 text-danger">
+                  <p id="endNumberError"></p>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="stepNumber" class="col-sm-2 col-form-label text-right">Step</label>
+                <div class="col-sm-6">
+                  <input type="number" id="stepNumber" class="form-control">
+                </div>
+              </div>
+              <div class="row" style="display: none;">
+                <div class="col-sm-2">&nbsp;</div>
+                <div class="col-sm-6 text-danger">
+                  <p id="stepNumberError"></p>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-6">
+                  <button type="submit" class="btn btn-primary">Display Evens</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div id="resultsRowText" class="row" style="display:none;">
+          <div class="col">
+            <p>Here are the even numbers between <span id="startNumberSpan"></span> and <span id="endNumberSpan"></span> by <span id="stepNumberSpan"></span>s:</p>
+          </div>
+        </div>
+        <div id="resultsRowNumbers" class="row" style="display:none;">
+          <div class="col">
+            <ul id="resultsList">
+
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

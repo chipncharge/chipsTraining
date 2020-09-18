@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+
+    <script>
+      const args = [43, 32, 23, 41, 88, 81, 12, 20];
+      var largestInteger = args[0];
+      var currentArg = 0;
+      function findMax(integerArray) {
+        for (integer in integerArray) {
+          currentArg = integerArray[integer];
+          if (currentArg > largestInteger) {
+            largestInteger = currentArg;
+          }
+        }
+      }
+      findMax(args);
+      console.log(largestInteger);
+    </script>
+  </body>
+</html>
